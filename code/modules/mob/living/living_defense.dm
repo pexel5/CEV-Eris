@@ -1,4 +1,4 @@
-#define ARMOR_HALLOS_COEFFICIENT 0.4
+#define ARMOR_HALLOS_COEFFICIENT 0.25
 
 
 //This calculation replaces old run_armor_check in favor of more complex and better system
@@ -18,12 +18,14 @@
 		show_message(msg1, 1)
 
 /mob/living/proc/damage_through_armor(damage = 0, damagetype = BRUTE, def_zone, attack_flag = ARMOR_MELEE, armor_divisor = 1, used_weapon, sharp = FALSE, edge = FALSE, wounding_multiplier = 1, list/dmg_types = list(), return_continuation = FALSE)
-
 	if(damage) // If damage is defined, we add it to the list
 		if(!dmg_types[damagetype])
 			dmg_types += damagetype
 		dmg_types[damagetype] += damage
 
+	if(!armor_divisor)
+		armor_divisor = 1
+		log_debug("[used_weapon] applied damage to [name] with an armor divisor of 0")
 
 	var/total_dmg = 0
 	var/dealt_damage = 0
@@ -116,6 +118,17 @@
 	// Deal damage to ablative armour based on how much was used, we multiply armour divisor back so high AP doesn't decrease damage dealt to ADR
 	if(ablative_armor)
 		damageablative(def_zone, (ablative_armor - remaining_ablative) * armor_divisor)
+
+	//If we have a grab in our hands and get hit with melee damage type, there is a chance we lower our grab's state
+	if(attack_flag == ARMOR_MELEE && ishuman(src) && isitem(used_weapon))
+		var/mob/living/carbon/human/H = src
+		var/obj/item/I = used_weapon
+		var/toughness_val = H.stats.getStat(STAT_TGH)
+
+		if(dealt_damage > 10 && prob((dealt_damage - toughness_val * (sharp && edge ? 1 : 0.5) * (I.w_class < ITEM_SIZE_BULKY ? 1 : 0.5))))
+			for(var/obj/item/grab/G in get_both_hands(H))
+				visible_message(SPAN_NOTICE("[H]'s grab has been weakened!"), SPAN_WARNING("Your grab has been weakened!"))
+				G.state--
 
 	// Returns if a projectile should continue travelling
 	if(return_continuation)
