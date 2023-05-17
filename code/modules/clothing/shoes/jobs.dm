@@ -28,7 +28,7 @@
 
 /obj/item/clothing/shoes/jackboots/ironhammer
 	icon_state = "jackboots_ironhammer"
-	spawn_blacklisted = TRUE
+	desc = "Standard-issue Ironhammer combat boots for combat scenarios or combat situations. All combat, all the time."
 
 /obj/item/clothing/shoes/jackboots/german
 	name = "Oberth Republic boots"
@@ -63,7 +63,6 @@
 
 /obj/item/clothing/shoes/reinforced/ironhammer
 	icon_state = "reinforced_ironhammer"
-	spawn_blacklisted = TRUE
 
 /obj/item/clothing/shoes/reinforced/medical
 	name = "moebius reinforced shoes"

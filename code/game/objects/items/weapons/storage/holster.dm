@@ -24,7 +24,7 @@
 		/obj/item/gun/projectile/handmade_pistol,
 		/obj/item/gun/projectile/flare_gun,
 		/obj/item/gun/projectile/lamia,
-		/obj/item/gun/projectile/mk58,
+		/obj/item/gun/projectile/automatic/modular/mk58/gray/stock,
 		/obj/item/gun/projectile/olivaw,
 		/obj/item/gun/projectile/mandella,
 		/obj/item/gun/projectile/pistol,
@@ -52,6 +52,10 @@
 		/obj/item/gun/energy/nuclear,
 		/obj/item/gun/energy/nt_svalinn,
 		/obj/item/gun/energy/crossbow,
+		/obj/item/gun/energy/toxgun,
+		/obj/item/gun/energy/decloner,
+		/obj/item/gun/energy/floragun,
+		/obj/item/gun/energy/laser/makeshift_pistol,
 		/obj/item/reagent_containers/food/snacks/mushroompizzaslice,
 		/obj/item/reagent_containers/food/snacks/meatpizzaslice,
 		/obj/item/reagent_containers/food/snacks/vegetablepizzaslice,
@@ -74,7 +78,8 @@
 		/obj/item/melee,
 		/obj/item/tool/crowbar,
 		/obj/item/tool/hammer/,
-		/obj/item/tool/hatchet
+		/obj/item/tool/hatchet,
+		/obj/item/melee/energy/sword
 		)
 
 
@@ -175,7 +180,7 @@
 		/obj/item/gun/projectile/handmade_pistol,
 		/obj/item/gun/projectile/flare_gun,
 		/obj/item/gun/projectile/lamia,
-		/obj/item/gun/projectile/mk58,
+		/obj/item/gun/projectile/automatic/modular/mk58,
 		/obj/item/gun/projectile/olivaw,
 		/obj/item/gun/projectile/mandella,
 		/obj/item/gun/projectile/pistol,
@@ -203,6 +208,10 @@
 		/obj/item/gun/energy/nuclear,
 		/obj/item/gun/energy/nt_svalinn,
 		/obj/item/gun/energy/crossbow,
+		/obj/item/gun/energy/toxgun,
+		/obj/item/gun/energy/decloner,
+		/obj/item/gun/energy/floragun,
+		/obj/item/gun/energy/laser/makeshift_pistol,
 		/obj/item/reagent_containers/food/snacks/mushroompizzaslice,
 		/obj/item/reagent_containers/food/snacks/meatpizzaslice,
 		/obj/item/reagent_containers/food/snacks/vegetablepizzaslice,
@@ -233,7 +242,7 @@
 		/obj/item/tool/sword/nt/halberd,
 		/obj/item/tool/sword/nt/spear
 		)
-	
+
 	price_tag = 300
 	sound_in = 'sound/effects/sheathin.ogg'
 	sound_out = 'sound/effects/sheathout.ogg'
@@ -256,7 +265,8 @@
 	can_hold = list(
 		/obj/item/tool/hammer,
 		/obj/item/tool/hatchet,
-		/obj/item/tool/makeshiftaxe
+		/obj/item/tool/makeshiftaxe,
+		/obj/item/melee/energy/sword/sabre
 		)
 	price_tag = 20
 
@@ -330,7 +340,7 @@
 				holster.attack_hand(H)
 				holster_handled = TRUE
 				break
-	
+
 	if(!holster_handled)
 		to_chat(H, SPAN_NOTICE(!H.get_active_hand() ? "You don't have any occupied pouch holsters." : "All your pouch holsters are occupied."))
 		return FALSE

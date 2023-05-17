@@ -19,12 +19,12 @@
 	mag_well = MAG_WELL_PISTOL
 	magazine_type = /obj/item/ammo_magazine/cspistol
 	proj_step_multiplier = 0.8
-	damage_multiplier = 1.7
-	penetration_multiplier = 0.8
+	damage_multiplier = 1.6
+	penetration_multiplier = 0.5 // Penetration level of 2, penetrates much more reliably than most rifles
 	init_recoil = HANDGUN_RECOIL(0.6)
 
 	spawn_tags = SPAWN_TAG_FS_PROJECTILE
-	gun_parts = list(/obj/item/part/gun/frame/mandella = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/pistol = 1, /obj/item/part/gun/barrel/clrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/mandella = 1, /obj/item/part/gun/modular/grip/black = 1, /obj/item/part/gun/modular/mechanism/pistol = 1, /obj/item/part/gun/modular/barrel/clrifle = 1)
 
 
 /obj/item/gun/projectile/mandella/update_icon()
@@ -49,6 +49,6 @@
 	desc = "A Mandella pistol frame. Covertness never looked so good."
 	icon_state = "frame_mandella"
 	resultvars = list(/obj/item/gun/projectile/mandella)
-	gripvars = list(/obj/item/part/gun/grip/black)
-	mechanismvar = /obj/item/part/gun/mechanism/pistol
-	barrelvars = list(/obj/item/part/gun/barrel/clrifle)
+	gripvars = list(/obj/item/part/gun/modular/grip/black)
+	mechanismvar = /obj/item/part/gun/modular/mechanism/pistol
+	barrelvars = list(/obj/item/part/gun/modular/barrel/clrifle)

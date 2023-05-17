@@ -161,7 +161,7 @@
 	name = "rifleman crate"
 	desc = "A crate containing six SA AK-47 rifles, and plenty of magazines."
 	icon_state = "serbcrate_deferred_green"
-	initial_contents = list(/obj/item/gun/projectile/automatic/ak47/sa  = 6,
+	initial_contents = list(/obj/item/gun/projectile/automatic/modular/ak/serbian_arms  = 6,
 	/obj/item/ammo_magazine/lrifle = 12, /obj/item/ammo_magazine/lrifle/drum = 6)
 
 /obj/item/storage/deferred/crate/kovacs
@@ -227,6 +227,17 @@
 		/obj/item/ammo_magazine/msmg = 16,
 		)
 
+/obj/item/storage/deferred/crate/shotgun
+	name = "pointman shotgun crate"
+	desc = "A crate containing 4 bojevic autoshotguns and 120 rounds of .50 buck and slug ammunition each. good to keep handy \
+			for close encounters."
+	icon_state = "serbcrate_deferred_black"
+	initial_contents = list(
+		/obj/item/gun/projectile/shotgun/bojevic = 4,
+		/obj/item/ammo_magazine/m12/pellet = 10,
+		/obj/item/ammo_magazine/m12 = 10
+		)
+
 /obj/item/storage/deferred/crate/cells
 	name = "power cell bin"
 	desc = "A moderately sized crate full of various power cells."
@@ -251,9 +262,9 @@
 	/obj/item/clothing/head/soft/green2soft = 1,
 	/obj/item/clothing/suit/armor/platecarrier/green = 1,
 	/obj/item/clothing/head/armor/faceshield/altyn = 1,
-	/obj/item/clothing/mask/balaclava/tactical = 1,
+	/obj/item/clothing/mask/balaclava = 1,
 	/obj/item/clothing/shoes/jackboots = 1,
-	/obj/item/clothing/gloves/fingerless = 1)
+	/obj/item/clothing/gloves/security = 1)
 
 /obj/item/storage/deferred/crate/uniform_brown
 	name = "brown uniform kit"
@@ -264,8 +275,9 @@
 	/obj/item/clothing/head/soft/tan2soft = 1,
 	/obj/item/clothing/suit/armor/platecarrier/tan = 1,
 	/obj/item/clothing/head/armor/faceshield/altyn/brown = 1,
-	/obj/item/clothing/mask/balaclava/tactical = 1,
+	/obj/item/clothing/mask/balaclava = 1,
 	/obj/item/clothing/shoes/jackboots = 1,
+	/obj/item/clothing/gloves/security = 1,
 	/obj/item/clothing/suit/storage/greatcoat/serbian_overcoat_brown = 1)
 
 /obj/item/storage/deferred/crate/uniform_black
@@ -276,9 +288,9 @@
 	/obj/item/clothing/under/serbiansuit/black = 1,
 	/obj/item/clothing/suit/armor/platecarrier = 1,
 	/obj/item/clothing/head/armor/faceshield/altyn/black = 1,
-	/obj/item/clothing/mask/balaclava/tactical = 1,
+	/obj/item/clothing/mask/balaclava = 1,
 	/obj/item/clothing/shoes/jackboots = 1,
-	/obj/item/clothing/gloves/fingerless = 1,
+	/obj/item/clothing/gloves/security = 1,
 	/obj/item/clothing/suit/storage/greatcoat/serbian_overcoat = 1)
 
 /obj/item/storage/deferred/crate/uniform_flak
@@ -289,9 +301,9 @@
 	/obj/item/clothing/under/serbiansuit = 1,
 	/obj/item/clothing/suit/armor/flak/green = 1,
 	/obj/item/clothing/head/armor/faceshield/altyn/maska = 1,
-	/obj/item/clothing/mask/balaclava/tactical = 1,
+	/obj/item/clothing/mask/balaclava = 1,
 	/obj/item/clothing/shoes/jackboots = 1,
-	/obj/item/clothing/gloves/fingerless = 1,
+	/obj/item/clothing/gloves/security = 1,
 	/obj/item/storage/fancy/cigarettes = 1)
 
 /obj/item/storage/deferred/crate/uniform_light
