@@ -289,7 +289,7 @@
 	req_access = list(11)
 	},
 /turf/simulated/floor/reinforced,
-/area/outpost/pulsar/shuttle)
+/area/outpost/pulsar)
 "kF" = (
 /obj/structure/table/rack,
 /obj/spawner/material/building,
@@ -366,6 +366,14 @@
 /obj/spawner/booze/low_chance,
 /turf/simulated/floor/tiled/steel/cargo,
 /area/outpost/pulsar/maintenance)
+"lZ" = (
+/obj/spawner/mob/roaches/cluster,
+/turf/simulated/floor/plating/under,
+/area/outpost/pulsar/maintenance)
+"mB" = (
+/obj/spawner/traps/low_chance,
+/turf/simulated/floor/tiled/techmaint,
+/area/outpost/pulsar)
 "nc" = (
 /obj/spawner/junk/low_chance,
 /obj/spawner/junk/low_chance,
@@ -376,6 +384,10 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/techmaint,
+/area/outpost/pulsar/maintenance)
+"no" = (
+/obj/spawner/mob/roaches/cluster/low_chance,
+/turf/simulated/floor/tiled/steel/cargo,
 /area/outpost/pulsar/maintenance)
 "nC" = (
 /obj/spawner/pizza,
@@ -420,9 +432,6 @@
 /obj/spawner/lowkeyrandom,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/outpost/pulsar/maintenance)
-"ox" = (
-/turf/simulated/wall/r_wall,
-/area/outpost/pulsar/shuttle)
 "oK" = (
 /obj/structure/table/standard,
 /obj/spawner/lowkeyrandom/low_chance,
@@ -447,6 +456,12 @@
 /obj/spawner/junkfood/low_chance,
 /turf/simulated/floor/tiled/steel/cargo,
 /area/outpost/pulsar/maintenance)
+"qG" = (
+/obj/effect/map_effect/simple_portal{
+	portal_tag = "pulsar"
+	},
+/turf/simulated/floor/reinforced,
+/area/outpost/pulsar)
 "qW" = (
 /obj/structure/table/rack,
 /obj/spawner/boxes,
@@ -462,6 +477,14 @@
 /obj/spawner/scrap/sparse/low_chance,
 /turf/simulated/floor/plating/under,
 /area/outpost/pulsar/maintenance)
+"rW" = (
+/obj/spawner/mob/roaches/cluster/low_chance,
+/turf/simulated/floor/tiled/techmaint,
+/area/outpost/pulsar/maintenance)
+"sm" = (
+/obj/spawner/flora/low_chance,
+/turf/simulated/floor/tiled/techmaint,
+/area/outpost/pulsar/maintenance)
 "sF" = (
 /obj/structure/catwalk,
 /obj/structure/sign/faction/technomancers{
@@ -469,6 +492,10 @@
 	},
 /turf/space/pulsar,
 /area/space)
+"sK" = (
+/obj/spawner/flora/low_chance,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/outpost/pulsar/maintenance)
 "tf" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -498,7 +525,7 @@
 "tM" = (
 /obj/structure/jtb_pillar,
 /turf/simulated/floor/reinforced,
-/area/outpost/pulsar/shuttle)
+/area/outpost/pulsar)
 "tQ" = (
 /obj/spawner/junk/low_chance,
 /turf/simulated/floor/tiled/steel/brown_platform,
@@ -587,11 +614,8 @@
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/outpost/pulsar/maintenance)
 "xa" = (
-/obj/effect/map_effect/portal/line/side_a{
-	dir = 8
-	},
 /turf/simulated/floor/reinforced,
-/area/outpost/pulsar/shuttle)
+/area/outpost/pulsar)
 "xl" = (
 /obj/structure/table/rack,
 /obj/spawner/pack/tech_loot/low_chance,
@@ -804,6 +828,11 @@
 /obj/effect/window_lwall_spawn/smartspawn,
 /turf/simulated/floor/plating,
 /area/outpost/pulsar/maintenance)
+"DF" = (
+/obj/structure/catwalk,
+/obj/spawner/mob/roaches/cluster/low_chance,
+/turf/simulated/floor/plating/under,
+/area/outpost/pulsar/maintenance)
 "DN" = (
 /obj/structure/table/standard,
 /obj/spawner/booze,
@@ -842,6 +871,10 @@
 /obj/spawner/lowkeyrandom/low_chance,
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled/techmaint_panels,
+/area/outpost/pulsar/maintenance)
+"EJ" = (
+/obj/spawner/traps/low_chance,
+/turf/simulated/floor/tiled/steel/orangecorner,
 /area/outpost/pulsar/maintenance)
 "EU" = (
 /obj/structure/table/standard,
@@ -1038,13 +1071,6 @@
 /obj/spawner/booze/low_chance,
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/outpost/pulsar/maintenance)
-"Nd" = (
-/obj/effect/map_effect/portal/master/side_a{
-	dir = 8;
-	portal_id = "pulsar"
-	},
-/turf/simulated/floor/reinforced,
-/area/outpost/pulsar/shuttle)
 "Nf" = (
 /obj/machinery/pulsar,
 /turf/simulated/floor/tiled/dark/gray_perforated,
@@ -1113,16 +1139,17 @@
 	},
 /turf/simulated/floor/wood,
 /area/outpost/pulsar)
-"Pd" = (
-/obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/plating,
-/area/outpost/pulsar/shuttle)
 "Pl" = (
 /turf/simulated/floor/tiled/steel/cargo,
 /area/outpost/pulsar/maintenance)
-"PC" = (
-/turf/simulated/floor/reinforced,
-/area/outpost/pulsar/shuttle)
+"PE" = (
+/obj/spawner/mob/roaches/cluster/low_chance,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/outpost/pulsar/maintenance)
+"PH" = (
+/obj/spawner/mob/spiders/cluster/low_chance,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/outpost/pulsar/maintenance)
 "PR" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -17696,7 +17723,7 @@ bq
 aj
 jv
 Pl
-Pl
+PH
 qh
 aj
 bM
@@ -18292,13 +18319,13 @@ Fm
 aj
 xl
 wv
-wv
+PE
 Br
 bq
 kr
 aj
 Cg
-bq
+rW
 aj
 aj
 aj
@@ -18704,7 +18731,7 @@ aj
 tR
 il
 Ub
-Pl
+sK
 aj
 YQ
 SQ
@@ -18901,7 +18928,7 @@ bq
 bq
 yR
 bq
-bq
+yR
 eI
 il
 il
@@ -19093,7 +19120,7 @@ bM
 bM
 oK
 bq
-bq
+rW
 bq
 bq
 aJ
@@ -20132,7 +20159,7 @@ Zq
 zw
 aj
 AQ
-il
+DF
 NF
 aj
 aj
@@ -20906,7 +20933,7 @@ He
 He
 bM
 aj
-bq
+yR
 Ev
 bM
 WB
@@ -20930,7 +20957,7 @@ aa
 WB
 He
 bq
-bq
+rW
 bq
 bq
 aj
@@ -21529,7 +21556,7 @@ Yf
 Yf
 Yf
 Wb
-lA
+mB
 SD
 lA
 lA
@@ -22128,13 +22155,13 @@ WB
 OB
 OB
 OB
-ox
-ox
-ox
+ad
+ad
+ad
 kB
-ox
-ox
-ox
+ad
+ad
+ad
 WB
 aa
 aa
@@ -22330,13 +22357,13 @@ WB
 WB
 WB
 WB
-Pd
+ew
 tM
-PC
-PC
-PC
+xa
+xa
+xa
 tM
-Pd
+ew
 WB
 aa
 aa
@@ -22523,7 +22550,7 @@ HA
 bM
 VY
 il
-Pl
+no
 Ub
 SK
 He
@@ -22532,13 +22559,13 @@ WB
 aa
 aa
 WB
-Pd
-PC
-PC
-PC
-PC
-PC
-Pd
+ew
+xa
+xa
+xa
+xa
+xa
+ew
 WB
 aa
 aa
@@ -22734,13 +22761,13 @@ WB
 aa
 aa
 WB
-ox
-PC
-PC
-PC
-PC
-PC
-ox
+ad
+xa
+xa
+qG
+xa
+xa
+ad
 WB
 aa
 WB
@@ -22936,13 +22963,13 @@ WB
 WB
 WB
 WB
-ox
-PC
-PC
-PC
-PC
-PC
-ox
+ad
+xa
+xa
+xa
+xa
+xa
+ad
 WB
 WB
 WB
@@ -22957,7 +22984,7 @@ YQ
 aj
 Cl
 AQ
-il
+DF
 xu
 YQ
 aj
@@ -23138,13 +23165,13 @@ bM
 bM
 WB
 WB
-ox
-Nd
+ad
 xa
 xa
 xa
 xa
-ox
+xa
+ad
 WB
 WB
 bM
@@ -23340,13 +23367,13 @@ rU
 bM
 HA
 HA
-ox
-ox
-ox
-ox
-ox
-ox
-ox
+ad
+ad
+ad
+ad
+ad
+ad
+ad
 HA
 HA
 bM
@@ -23534,7 +23561,7 @@ bM
 WZ
 il
 wh
-zg
+lZ
 AQ
 co
 wh
@@ -24160,7 +24187,7 @@ RV
 aj
 Xs
 il
-bq
+yR
 bq
 bq
 bq
@@ -24556,7 +24583,7 @@ SA
 ek
 aj
 Gl
-bq
+rW
 bq
 aj
 aj
@@ -24749,7 +24776,7 @@ WB
 zo
 He
 bN
-bN
+EJ
 af
 il
 il
@@ -24759,7 +24786,7 @@ BO
 LW
 bq
 bq
-bq
+yR
 Wk
 bq
 bq
@@ -24964,7 +24991,7 @@ fD
 aj
 aj
 bq
-bq
+sm
 aj
 aj
 eB
@@ -25169,7 +25196,7 @@ aJ
 bq
 bq
 bq
-bq
+yR
 Wk
 il
 Ab
