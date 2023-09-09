@@ -1646,6 +1646,7 @@
 #include "code\modules\clothing\under\jobs\medsci.dm"
 #include "code\modules\clothing\under\jobs\security.dm"
 #include "code\modules\clothing\underwear\base.dm"
+#include "code\modules\containers\container.dm"
 #include "code\modules\core_implant\core_implant.dm"
 #include "code\modules\core_implant\group_ritual.dm"
 #include "code\modules\core_implant\module.dm"
