@@ -81,8 +81,8 @@
 
 /obj/item/storage/deferred/comms
 	name = "communications kit"
-	desc = "A box full of radios and beacons"
-	initial_contents = list(/obj/item/device/radio/beacon = 6, /obj/item/device/radio = 6)
+	desc = "A box full of radios"
+	initial_contents = list(/obj/item/device/radio = 6)
 
 /obj/item/storage/deferred/lights
 	name = "illumination kit"
@@ -346,7 +346,7 @@
 
 /obj/item/storage/deferred/crate/clown_crime
 	name = "mastermind suit bag"
-	desc = "A duffelbag filled with clothing and... a second duffelbag?."
+	desc = "A duffelbag filled with clothing and... a second duffelbag?"
 	icon = 'icons/obj/storage/backpack.dmi'
 	icon_state = "lootbag"
 	spawn_blacklisted = TRUE
